@@ -8,6 +8,6 @@
     });
 
     robot.hear(/Monday/, function(res) {
-        return img.src = https://s-media-cache-ak0.pinimg.com/736x/9b/b3/5e/9bb35e437965f0d34bf288c853c64559.jpg;
+        return img.src = "https://s-media-cache-ak0.pinimg.com/736x/9b/b3/5e/9bb35e437965f0d34bf288c853c64559.jpg";
     });
 };
