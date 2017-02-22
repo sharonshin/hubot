@@ -14,7 +14,11 @@ var weekend = [
     robot.respond(/My name is (.*)/i, function(res) {
         var name;
         name = res.match[1];
-        return res.send("Nice to meet you, " + name + "!");
+        if (name==="purplebot"){
+            return res.send("We have the same name, twinsies!");
+        } else {
+        return res.reply("Nice to meet you, " + name + "!");
+        }
     });
 
     robot.hear(/weekend/, function(res) {
