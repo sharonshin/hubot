@@ -11,6 +11,12 @@ var weekend = [
         return res.send("Hello friend!");
     });
 
+    robot.respond(/My name is (.*)/i, function(res) {
+        var name;
+        name = res.match[1];
+        return res.send("Nice to meet you, " + name + "!");
+    });
+
     robot.hear(/weekend/, function(res) {
         return res.send(res.random(weekend));
     });
@@ -22,4 +28,5 @@ var weekend = [
     robot.respond(/What's your favorite color?/, function(res) {
         return res.send("I may be biased, but I like purple.");
     });
+
 };
