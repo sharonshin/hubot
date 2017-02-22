@@ -23,7 +23,7 @@ var weekend = [
     });
 
     robot.hear(/weekend/, function(wknd) {
-        return wknd.send(res.random(weekend));
+        return wknd.send(wknd.random(weekend));
     });
 
     robot.hear(/monday/, function(mon) {
