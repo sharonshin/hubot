@@ -13,7 +13,7 @@ weekend = [
     });
 
     robot.hear(/Weekend/, function(res) {
-        msg.send msg.random weekend;
+        return res.send res.random weekend;
     });
 
     robot.hear(/Monday/, function(res) {
