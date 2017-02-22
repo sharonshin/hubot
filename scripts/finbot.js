@@ -1,5 +1,4 @@
- 
- 
+  
 var weekend = [
     "http://connect.citizen.co.za/wp-content/uploads/sites/25/2016/05/WE2.jpg?x71574",       "http://lifepopper.com/wp-content/uploads/2015/02/Funny-friday-hilarious-lifepopper-pictures-love-weekend-fun-memes-6.jpg",
     "http://cdn.pophangover.com/images/meme-912-1.jpg",
