@@ -7,17 +7,15 @@ var weekend = [
 ]
 
  module.exports = function(robot) {
-    robot.hear(/Hello|Hi|Hey/, function(res) {
+    robot.hear(/hello|hi|hey/, function(res) {
         return res.send("Hello friend!");
     });
 
-    
-    robot.hear(/Weekend/, function(res) {
+    robot.hear(/weekend/, function(res) {
         return res.send(res.random(weekend));
     });
 
-
-    robot.hear(/Monday/, function(res) {
+    robot.hear(/monday/, function(res) {
         return res.send("https://s-media-cache-ak0.pinimg.com/736x/9b/b3/5e/9bb35e437965f0d34bf288c853c64559.jpg");
     });
 
