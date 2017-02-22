@@ -7,30 +7,31 @@ var weekend = [
 ]
 
  module.exports = function(robot) {
+
     robot.hear(/hello|hi|hey/, function(res) {
         return res.send("Hello friend!");
     });
 
-    robot.respond(/My name is (.*)/i, function(res) {
+    robot.respond(/My name is (.*)/i, function(msg) {
         var name;
-        name = res.match[1];
+        name = msg.match[1];
         if (name==="purplebot"){
-            return res.send("We have the same name, twinsies!");
+            return msg.send("We have the same name, twinsies!");
         } else {
-        return res.reply("Nice to meet you, " + name + "!");
+        return msg.reply("Nice to meet you, " + name + "!");
         }
     });
 
-    robot.hear(/weekend/, function(res) {
-        return res.send(res.random(weekend));
+    robot.hear(/weekend/, function(wknd) {
+        return wknd.send(res.random(weekend));
     });
 
-    robot.hear(/monday/, function(res) {
-        return res.send("https://s-media-cache-ak0.pinimg.com/736x/9b/b3/5e/9bb35e437965f0d34bf288c853c64559.jpg");
+    robot.hear(/monday/, function(mon) {
+        return mon.send("https://s-media-cache-ak0.pinimg.com/736x/9b/b3/5e/9bb35e437965f0d34bf288c853c64559.jpg");
     });
 
-    robot.respond(/What's your favorite color?/, function(res) {
-        return res.send("I may be biased, but I like purple.");
+    robot.respond(/What's your favorite color?/, function(clr) {
+        return clr.send("I may be biased, but I like purple.");
     });
 
 };
