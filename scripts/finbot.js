@@ -12,7 +12,7 @@ weekend = [
         return res.send("Hello friend!");
     });
 
-    robot.hear(/Monday/, function(res) {
+    robot.hear(/Weekend/, function(res) {
         msg.send msg.random weekend;
     });
 
