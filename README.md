@@ -212,3 +212,15 @@ Add the subdomain hubot should connect to. If you web URL looks like
 
 You may want to get comfortable with `heroku logs` and `heroku restart` if
 you're having issues.
+
+## Interacting with Hubot
+
+Note all commands are case sensitive. 
+
+Say hello, hi, or hey to hubot.
+Tell him your name with the phrase "My name is ____".
+Say the word weekend or monday, and a funny picture will come up. 
+Ask hubot "What's your favorite color?"
+
+
+
